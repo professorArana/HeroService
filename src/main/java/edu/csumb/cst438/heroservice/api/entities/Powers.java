@@ -5,8 +5,11 @@ import java.util.List;
 public class Powers {
     private List<String> powers;
     //TODO: Make List<String> to List<Power> where Power has a name/type and strength and maybe description...
-
+    public Powers () {
+        super();
+    }
     public Powers (List<String> powers) {
+        super();
         this.powers = powers;
     }
 
