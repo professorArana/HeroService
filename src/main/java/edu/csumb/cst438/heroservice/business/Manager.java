@@ -15,6 +15,10 @@ public class Manager {
 
     //TODO: use Business entities rather than api/presentation layer enteties.
     public List<Hero> getHeroList () {
+        //do some business validation
+        //call the data layer
+        //data validation
+        //return data from data layer
         return null;
     }
 }

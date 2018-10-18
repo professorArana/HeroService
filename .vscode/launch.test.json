@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "HeroService",
+                "projectName": "HeroService",
+                "workingDirectory": "c:\\cst438\\2018fall\\MsaDemo\\HeroService",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "HeroService",
+                "projectName": "HeroService",
+                "workingDirectory": "c:\\cst438\\2018fall\\MsaDemo\\HeroService",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
