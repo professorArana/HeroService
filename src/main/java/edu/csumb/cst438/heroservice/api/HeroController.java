@@ -26,20 +26,20 @@ public class HeroController {
     @GetMapping ("/Heroes")
     @ResponseBody
     List<Hero> getHeroes () {
-        // Hero xavier = new Hero("1", new Identity("Charles Xavier"), new AlterEgo("Professor X"), new Powers(Arrays.asList("mind stuff")));
-        // Hero wolverine = new Hero("2", new Identity("James Howlett"), new AlterEgo("Wolverine"), new Powers(Arrays.asList("strength","rapid healing","metal bones")));
-        // Hero cyclops = new Hero("3", new Identity("Scott Summers"), new AlterEgo("Cyclops"), new Powers(Arrays.asList("eye beams")));
-        // List<Hero> result = Arrays.asList(xavier, wolverine, cyclops);
-        List<Hero> result = callDB();
+        Hero xavier = new Hero("1", new Identity("Charles Xavier"), new AlterEgo("Professor X"), new Powers(Arrays.asList("mind stuff")));
+        Hero wolverine = new Hero("2", new Identity("James Howlett"), new AlterEgo("Wolverine"), new Powers(Arrays.asList("strength","rapid healing","metal bones")));
+        Hero cyclops = new Hero("3", new Identity("Scott Summers"), new AlterEgo("Cyclops"), new Powers(Arrays.asList("eye beams")));
+        List<Hero> result = Arrays.asList(xavier, wolverine, cyclops);
+        // List<Hero> result = callDB();
         return result;
     }
 
-    private List<Hero> callDB () {
-        String uri = "http://localhost:8081/allHeroes";
-        RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<List<Hero>> result = restTemplate.exchange(uri,
-        HttpMethod.GET,null, 
-        new ParameterizedTypeReference<List<Hero>>(){});
-        return result.getBody();
-    }
+    // private List<Hero> callDB () {
+    //     String uri = "http://localhost:8081/allHeroes";
+    //     RestTemplate restTemplate = new RestTemplate();
+    //     ResponseEntity<List<Hero>> result = restTemplate.exchange(uri,
+    //     HttpMethod.GET,null, 
+    //     new ParameterizedTypeReference<List<Hero>>(){});
+    //     return result.getBody();
+    // }
 }
